@@ -19,6 +19,6 @@ public:
     }
     if(q%2!=0)
     return true;
-    return abs(sum)!=(abs(q)/2*9);
+    return sum != -(q / 2) * 9;
 }
 };
