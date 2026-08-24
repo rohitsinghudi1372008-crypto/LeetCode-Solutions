@@ -69,9 +69,9 @@ The difference between their scores is (-22) - 0 = -22.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 83 ms (beats 97.95%)  
-**Memory:** 95 MB (beats 58.71%)  
-**Submitted:** 2026-08-24T18:07:33.686Z  
+**Runtime:** 119 ms (beats 22.55%)  
+**Memory:** 95.2 MB (beats 49.63%)  
+**Submitted:** 2026-08-24T18:08:54.308Z  
 
 ```cpp
 class Solution {
