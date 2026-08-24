@@ -59,14 +59,31 @@ For the third test case, its sum cannot be made `0`. Therefore, the answer is `-
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:00:04.630Z  
+**Submitted:** 2026-08-24T16:04:08.378Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+int t;
+cin>>t;
+while(t--){
+    int n;
+    cin>>n;
+    int sum=0;
+    for(int i=0; i<n; i++){
+        int x;
+        cin>.x;
+        sum+=x;
+        
+    }
+    if(n52!=0){
+        cout<<-1<<endl;
+        else
+        cout<<abs(sum)/2<<endl;
+    }
+}return 0;
 
 }
 
