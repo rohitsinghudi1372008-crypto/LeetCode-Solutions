@@ -59,7 +59,7 @@ For the third test case, its sum cannot be made `0`. Therefore, the answer is `-
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-24T16:04:45.844Z  
+**Submitted:** 2026-08-24T16:05:05.008Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -79,7 +79,7 @@ int main() {
             sum += x;
 
         }
-        if (n52 != 0)
+        if (n%2 != 0)
             cout << -1 << endl;
         else
             cout << abs(sum) / 2 << endl;
