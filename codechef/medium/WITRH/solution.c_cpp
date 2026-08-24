@@ -1,13 +1,14 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	int x,y,k;
-	cin>>x>>y>>k;
-	if(abs(x-y)<=k)
-	cout<<"YES";
-	else
-	cout<<"NO";
-	return 0;
+    int x, y, k;
+    cin >> x >> y >> k;
+    if (abs(x - y) <= k)
+        cout << "YES";
+    else
+        cout << "NO";
+    return 0;
 
 }
