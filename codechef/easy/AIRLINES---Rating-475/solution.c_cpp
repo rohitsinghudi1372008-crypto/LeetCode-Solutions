@@ -2,12 +2,15 @@
 using namespace std;
 
 int main() {
-    int t;
-    cin>>t;
-    while(t--){
-        int x,y;
-        cin>>x>>y;
-        cout<<min(x,y)<<endl;
-    }
-return 0;
+	int t;
+	cin>>t;
+	while(t--){
+	    int x,y,z;
+	    cin>>x>>y>>z;
+	     int seats = 10 * x;
+        int tickets = min(y, seats);
+
+        cout << tickets * z<< endl;
+	}
+
 }
