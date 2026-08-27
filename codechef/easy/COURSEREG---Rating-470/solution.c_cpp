@@ -1,0 +1,19 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int N, M, K;
+        cin >> N >> M >> K;
+
+        if (N + K <= M)
+            cout << "Yes\n";
+        else
+            cout << "No\n";
+    }
+
+    return 0;
+}
