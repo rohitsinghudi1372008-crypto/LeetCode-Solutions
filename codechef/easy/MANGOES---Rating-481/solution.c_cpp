@@ -1,0 +1,18 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int W, X, Y, Z;
+        cin >> W >> X >> Y >> Z;
+
+        int ans = W + (X - Y) * Z;
+
+        cout << ans << endl;
+    }
+
+    return 0;
+}
