@@ -39,9 +39,9 @@ Explanation: The square root of 8 is 2.82842..., and since we round it down to t
 ## Solution
 
 **Language:** C++  
-**Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 8.5 MB (beats 50.89%)  
-**Submitted:** 2026-08-28T17:09:04.298Z  
+**Runtime:** 3 ms (beats 19.83%)  
+**Memory:** 8.5 MB (beats 87.14%)  
+**Submitted:** 2026-08-28T17:09:46.647Z  
 
 ```cpp
 class Solution {
