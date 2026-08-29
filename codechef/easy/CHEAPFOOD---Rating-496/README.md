@@ -4,57 +4,59 @@
 
 ## Problem
 
-### Chef and Gym
+### Best Coupon
 
-Chef has decided to join a Gym in ChefLand and if possible, also hire a personal trainer at the gym. The monthly cost of the gym is $X$ and personal training will cost him an additional $Y$ per month. Chef's total budget per month is only $Z$. Print `1` if Chef can only join the gym, `2` if he can also have a personal trainer, and `0` if he can't even join the gym.
+Chef is ordering food online (instead of cooking) and the bill comes out to be Rs. $X$. Chef can use one of the following two coupons to avail a discount.
 
- **Note**  that if Chef wants to hire a personal trainer, he  *must*  join the gym — he cannot hire the trainer without joining the gym.
+- Get $10$ percent off on the bill amount
+- Get a flat discount of Rs. $100$ on the bill amount
+
+What is the maximum discount Chef can avail?
 
 ### Input Format
-- The first line of input will contain a single integer $T$, denoting the number of test cases. Then the test cases follow.
-- Each test case consists of a single line of input containing three space-separated integers $X, Y, Z$.
+- The first line contains a single integer $T$ - the number of test cases. Then the test cases follow.
+- The first and only line of each test case contains a single integer $X$ - the bill amount before discount.
 ### Output Format
 
-For each test case, output in a single line `2` if Chef can go to the gym and have a trainer, `1` if Chef can only go to the gym, `0` if he can't even go to the gym.
+For each testcase, output the maximum discount Chef can avail.
 
 ### Constraints
 - $1 \leq T \leq 100$
-- $1 \leq X,Y,Z \leq 100$
+- $100 \leq X \leq 10000$
+- $X$ is a multiple of $100$.
 ### Sample 1:
 Input
 Output
 
 ```
-4
-1 2 3
-10 12 13
-23 1 22
-23 1 63
+3
+300
+1300
+1000
+
 ```
 
 ```
-2
-1
-0
-2
+100
+130
+100
+
 ```
 
 ### Explanation:
 
- **Test case $1$:**  Since the total cost of Chef getting a gym membership and a trainer is $1+2 = 3$ which is equal to his budget of $3$, Chef can get both a gym membership and a trainer.
+ **Test case 1:**  Using the second coupon, Chef can get a flat discount of Rs. $100$, which is maximum.
 
- **Test case $2$:**  Since the total cost of Chef getting a gym membership and a trainer is $10+12 = 22$ which is greater than his budget of $13$, he can't get both a gym membership and a trainer. However, the cost of the gym membership is $10$ which is less than his budget of $13$, so Chef can get only a gym membership.
+ **Test case 2:**  Using the first coupon, Chef can get a $10$ percent discount of Rs. $130$, which is maximum.
 
- **Test case $3$:**  Since the cost of Chef getting a gym membership is $23$ which is greater than his budget of $22$, Chef can't even get the gym membership.
-
- **Test case $4$:**  The same costs as the previous test, but this time Chef has enough money to afford both the membership and a personal trainer.
+ **Test case 3:**  No matter which coupon Chef chooses Chef will get a discount of Rs. $100$.
 
 ## Solution
 
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-29T16:43:04.906Z  
+**Submitted:** 2026-08-29T16:43:52.702Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -65,18 +67,10 @@ int main() {
     cin >> T;
 
     while (T--) {
-        int X, Y, Z;
-        cin >> X >> Y >> Z;
+        int X;
+        cin >> X;
 
-        if (X + Y <= Z) {
-            cout << 2 << "\n";
-        }
-        else if (X <= Z) {
-            cout << 1 << "\n";
-        }
-        else {
-            cout << 0 << "\n";
-        }
+        cout << max(X / 10, 100) << "\n";
     }
 
     return 0;
