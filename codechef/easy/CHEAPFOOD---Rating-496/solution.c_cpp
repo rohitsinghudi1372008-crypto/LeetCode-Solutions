@@ -6,18 +6,10 @@ int main() {
     cin >> T;
 
     while (T--) {
-        int X, Y, Z;
-        cin >> X >> Y >> Z;
+        int X;
+        cin >> X;
 
-        if (X + Y <= Z) {
-            cout << 2 << "\n";
-        }
-        else if (X <= Z) {
-            cout << 1 << "\n";
-        }
-        else {
-            cout << 0 << "\n";
-        }
+        cout << max(X / 10, 100) << "\n";
     }
 
     return 0;
