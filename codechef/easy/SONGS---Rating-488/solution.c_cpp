@@ -1,0 +1,22 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int T;
+    cin >> T;
+
+    while (T--) {
+        int NA, NB, NC;
+        cin >> NA >> NB >> NC;
+
+        if (NA > NB + NC || 
+            NB > NA + NC || 
+            NC > NA + NB) {
+            cout << "YES\n";
+        } else {
+            cout << "NO\n";
+        }
+    }
+
+    return 0;
+}
