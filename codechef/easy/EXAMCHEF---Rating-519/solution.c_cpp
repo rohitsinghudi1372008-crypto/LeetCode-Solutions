@@ -1,0 +1,21 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int t;
+    cin>>t;
+    while(t--){
+        int x,y,z;
+        cin>>x>>y>>z;
+          int total = x * y;
+        int ans = z * 100 / total;
+        if(ans>50){
+            cout<<"YES"<<endl;
+        }else{
+            cout<<"NO"<<endl;
+        }
+        
+        
+    }
+
+}
