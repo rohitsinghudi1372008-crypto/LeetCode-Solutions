@@ -65,7 +65,7 @@ Thus, number of students who passed are $50\%$, which is equal to $50\%$.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-30T04:16:55.561Z  
+**Submitted:** 2026-08-30T04:18:26.111Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -73,23 +73,21 @@ using namespace std;
 
 int main() {
     int t;
-    cin>>t;
-    while(t--){
-        int x,y,z;
-        cin>>x>>y>>z;
-          int total = x * y;
-        int ans = z * 100 / total;
-        if(ans>50){
-            cout<<"YES"<<endl;
-        }else{
-            cout<<"NO"<<endl;
+    cin >> t;
+
+    while (t--) {
+        int x, y, z;
+        cin >> x >> y >> z;
+
+        if (2 * z > x * y) {
+            cout << "YES" << endl;
+        } else {
+            cout << "NO" << endl;
         }
-        
-        
     }
 
+    return 0;
 }
-
 ```
 
 ---
