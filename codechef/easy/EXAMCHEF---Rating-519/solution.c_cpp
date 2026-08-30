@@ -9,7 +9,10 @@ int main() {
         int x, y, z;
         cin >> x >> y >> z;
 
-        if (2 * z > x * y) {
+        int total = x * y;
+        int ans = z * 100 / total;
+
+        if (ans > 50) {
             cout << "YES" << endl;
         } else {
             cout << "NO" << endl;
