@@ -92,7 +92,7 @@ Since $2800 < 3000$, the output is `NO`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T15:54:44.390Z  
+**Submitted:** 2026-08-31T15:54:49.464Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
