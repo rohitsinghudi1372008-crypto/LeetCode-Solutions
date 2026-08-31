@@ -2,6 +2,13 @@
 using namespace std;
 
 int main() {
-	// your code goes here
+	int x,a,y,b,d;
+	cin>>x>>a>>y>>b>>d;
+	int revenue=x*a+y*b;
+	if(revenue>=d){
+	    cout<<"YES"<<endl;
+	}else{
+	    cout<<"NO"<<ENDL;
+	}
 
 }
