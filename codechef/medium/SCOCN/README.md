@@ -118,38 +118,39 @@ Therefore, the output is `1`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T16:05:53.263Z  
+**Submitted:** 2026-08-31T16:07:33.286Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
- int n;
- cin>>n;
- vector<int>a(n);
- for(int i=0; i<n;i++){
-     cin>>a[i];
- }
- int x;
- cin>>x;
- int count =0;
- for(int i=0; i<n; i++){
-     if(a[i]==x){
-         count++;
-         
-     }
-     if(count==2){
-         cout<<i;
-         return 0;
-     }
- }
+    int n;
+    cin >> n;
+    vector < int > a(n);
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    int x;
+    cin >> x;
+    int count = 0;
+    for (int i = 0; i < n; i++) {
+        if (a[i] == x) {
+            count++;
 
-}
-if(count==0){
-    cout<<-1;
-else
-    cout<<-2;
+        }
+        if (count == 2) {
+            cout << i;
+            return 0;
+        }
+    }
+
+
+if (count == 0) {
+    cout << -1;
+ }else{
+        cout << -2;
     return 0;
 }
 ```
