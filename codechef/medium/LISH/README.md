@@ -77,45 +77,45 @@ The total weight is `28`, so the minimum number of units required is `3`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T16:15:08.320Z  
+**Submitted:** 2026-08-31T16:19:18.549Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-  int w,n;
-  cin>>w>>n;
-  vector<int>a(n);
-  for(int i=0; i<n; i++){
-      cin>>a[i];
-      
-  }
-  sort(a.rbegin(),a.rend());
-  int total=0;
-  int units=0;
-  for(int i=0; i<n;i++){
-      total+=a[i];
-      units++;
-      
-      
-  }
-  if(total>=w){
-      cout<<units;
-      return 0;
-      
-  }
-  total +=a[i];
-  units++;
-  if(total>=w){
-      cout<<units;
-      return 0;
-      
-  }
-cout<<-1;
-return 0;
-}
+    int w, n;
+    cin >> w >> n;
+    vector < int > a(n);
+    for (int i = 0; i < n; i++) {
+        cin >> a[i];
 
+    }
+    sort(a.rbegin(), a.rend());
+    int total = 0;
+    int units = 0;
+    for (int i = 0; i < n; i++) {
+        total += a[i];
+        units++;
+
+
+    
+    if (total >= w) {
+        cout << units;
+        return 0;
+
+    }
+    total += a[i];
+    units++;
+    if (total >= w) {
+        cout << units;
+        return 0;
+}
+    }
+    cout << -1;
+    return 0;
+}
 ```
 
 ---
