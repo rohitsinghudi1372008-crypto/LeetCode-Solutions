@@ -92,7 +92,7 @@ Since $2800 < 3000$, the output is `NO`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T15:57:15.847Z  
+**Submitted:** 2026-08-31T15:57:38.772Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -105,7 +105,7 @@ int main() {
 	if(revenue>=d){
 	    cout<<"YES"<<endl;
 	}else{
-	    cout<<"NO"<<ENDL;
+	    cout<<"NO"<<endl;
 	}
 
 }
