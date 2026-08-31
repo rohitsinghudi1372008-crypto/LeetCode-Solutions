@@ -77,7 +77,7 @@ The total weight is `28`, so the minimum number of units required is `3`.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-08-31T16:19:18.549Z  
+**Submitted:** 2026-08-31T16:19:25.041Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -100,18 +100,18 @@ int main() {
         units++;
 
 
-    
-    if (total >= w) {
-        cout << units;
-        return 0;
 
-    }
-    total += a[i];
-    units++;
-    if (total >= w) {
-        cout << units;
-        return 0;
-}
+        if (total >= w) {
+            cout << units;
+            return 0;
+
+        }
+        total += a[i];
+        units++;
+        if (total >= w) {
+            cout << units;
+            return 0;
+        }
     }
     cout << -1;
     return 0;
