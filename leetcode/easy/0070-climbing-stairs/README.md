@@ -42,9 +42,9 @@ Explanation: There are three ways to climb to the top.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 2 ms (beats 5.08%)  
-**Memory:** 8.7 MB (beats 20.82%)  
-**Submitted:** 2026-09-03T08:03:52.805Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.8 MB (beats 20.82%)  
+**Submitted:** 2026-09-03T08:04:10.784Z  
 
 ```cpp
 class Solution {
