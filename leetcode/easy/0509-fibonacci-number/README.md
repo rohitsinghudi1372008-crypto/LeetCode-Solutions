@@ -52,9 +52,9 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms  
-**Memory:** 7.8 MB  
-**Submitted:** 2026-09-03T05:30:44.034Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 8.2 MB (beats 11.60%)  
+**Submitted:** 2026-09-03T05:31:02.201Z  
 
 ```cpp
 class Solution {
