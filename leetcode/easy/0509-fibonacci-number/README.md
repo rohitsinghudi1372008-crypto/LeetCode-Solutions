@@ -52,23 +52,25 @@ Explanation: F(4) = F(3) + F(2) = 2 + 1 = 3.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 3 ms (beats 64.24%)  
-**Memory:** 7.9 MB (beats 38.66%)  
-**Submitted:** 2026-09-03T05:34:06.254Z  
+**Runtime:** 3 ms  
+**Memory:** 7.8 MB  
+**Submitted:** 2026-09-03T05:30:44.034Z  
 
 ```cpp
 class Solution {
 public:
     int fib(int n) {
-        if(n<=1) return n;
-        int a=0;
-        int b=1;
-        for(int i=2; i<=n; i++){
-           int c=a+b;
-            a=b;
-            b=c;
+        if (n <= 1) return n;
+
+        vector<int> dp(n + 1);
+        dp[0] = 0;
+        dp[1] = 1;
+
+        for (int i = 2; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
         }
-        return b;
+
+        return dp[n];
     }
 };
 ```
