@@ -61,24 +61,28 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-08T13:42:06.313Z  
+**Submitted:** 2026-09-08T13:43:38.559Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	int t;
-	cin>>t;
-	while(t--){
-	    int n;
-	    cin>>n;
-	    cout<<(50*n)-(50*n*0.2+50*n*0.2+50*n*0.3)<<endl;
-	    
-	}
-return 0;
-}
+    int t;
+    cin >> t;
 
+    while (t--) {
+        int n;
+        cin >> n;
+
+        int income = 50 * n;
+        int profit = (income * 30) / 100;
+
+        cout << profit << endl;
+    }
+
+    return 0;
+}
 ```
 
 ---
