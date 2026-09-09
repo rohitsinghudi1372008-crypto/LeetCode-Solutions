@@ -1,11 +1,12 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-int x,y,f;
-cin>>x>>y>>f;
-int const1=12*x;
-int const2=12*y*f;
-cout<<min(const1,const2)<<endl;
-return 0;
+    int x, y, f;
+    cin >> x >> y >> f;
+    int const1 = 12 * x;
+    int const2 = 12 * y + f;
+    cout << min(const1, const2) << endl;
+    return 0;
 }
