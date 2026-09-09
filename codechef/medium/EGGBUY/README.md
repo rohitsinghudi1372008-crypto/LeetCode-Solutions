@@ -68,21 +68,21 @@ It's better to buy from the second shop, spending $53$ coins.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-09T16:25:43.756Z  
+**Submitted:** 2026-09-09T16:25:54.498Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-int x,y,f;
-cin>>x>>y>>f;
-int const1=12*x;
-int const2=12*y*f;
-cout<<min(const1,const2)<<endl;
-return 0;
+    int x, y, f;
+    cin >> x >> y >> f;
+    int const1 = 12 * x;
+    int const2 = 12 * y + f;
+    cout << min(const1, const2) << endl;
+    return 0;
 }
-
 ```
 
 ---
