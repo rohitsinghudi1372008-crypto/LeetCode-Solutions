@@ -7,6 +7,12 @@ int main() {
 	while(t--){
 	    int n,k;
 	    cin>>n>>k;
-	    
+	    if(n-k==1){
+	        cout<<"NO"<<endl;
+	    }
+	    else{
+	        cout<<"YES"<<endl;
+	    }
 	}
+	return 0;
 }
