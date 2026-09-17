@@ -58,27 +58,27 @@ Qualify
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-15T17:34:27.174Z  
+**Submitted:** 2026-09-17T16:34:11.669Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	int t;
-	cin>>t;
-	while(t--){
-	    int n;
-	    cin>>n;
-	   if(n%4==0){
-	       cout<<"Good"<<endl;
-	   } else{
-	       cout<<"Not Good"<<endl;
-	   }
-	}
-return 0;
+    int t;
+    cin >> t;
+    while (t--) {
+        int x, a, b;
+        cin >> x >> a >> b;
+        if (x == a * 1 + b * 2) {
+            cout << "Qualify" << endl;
+        } else {
+            cout << "NotQualify" << endl;
+        }
+    }
+    return 0;
 }
-
 ```
 
 ---
