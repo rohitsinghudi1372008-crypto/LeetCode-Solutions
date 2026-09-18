@@ -8,7 +8,7 @@ int main() {
     while (t--) {
         int n, x;
         cin >> n >> x;
-        if (x%n==0) {
+        if (n <= x) {
             cout << "YES" << endl;
         }
         else {
