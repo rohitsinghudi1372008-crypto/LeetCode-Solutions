@@ -53,27 +53,24 @@ Output: [0,1]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 43 ms (beats 25.61%)  
-**Memory:** 14.1 MB (beats 88.74%)  
-**Submitted:** 2026-09-09T17:20:44.489Z  
+**Runtime:** 43 ms (beats 25.84%)  
+**Memory:** 14.1 MB (beats 89.18%)  
+**Submitted:** 2026-09-18T11:29:48.353Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> twoSum(vector<int>& nums, int target) {
-        for (int i = 0; i < nums.size(); i++) {
-            for (int j = i + 1; j < nums.size(); j++) {
-                if (nums[i] + nums[j] == target) {
-                    return {i, j};
+        for(int i=0; i<nums.size();i++){
+            for(int j=i+1; j<nums.size(); j++){
+                if(nums[i]+nums[j]==target){
+                    return{i,j};
                 }
             }
         }
-
-        return {};
+return {};
     }
 };
-
-
 ```
 
 ---
