@@ -77,7 +77,7 @@ Thus, it's impossible to make the array  *good*  after a single deletion.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:45:03.242Z  
+**Submitted:** 2026-09-23T15:47:17.463Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -98,29 +98,29 @@ int main() {
             prefix[i] = prefix[i - 1] + a[i];
         bool good = true;
         int firstBad = -1;
-        for (int i = 0; i < n; i++)
-        if(prefix[i]<0){
-            good=false;
-            firstBad=i;
+        for (int i = 0; i < n; i++){
+            if (prefix[i] < 0) {
+                good = false;
+                firstBad = i;
+                break;
+            }
+    }
+
+    if (good) {
+        cout << "YES\n";
+        continue;
+    }
+    suffixMin[n - 1] = prefix[n - 1];
+    for (int i = n - 2; i >= 0; i--)
+        suffixMin[i] = min(prefix[i], suffixMin[i + 1]);
+    bool possible = false;
+    for (int i = 0; i <= firstBad; i++) {
+        if (suffixMin[i] - a[i] >= 0) {
+            possible = true;
             break;
         }
     }
-
-if(good)
-cout<<"YES\n";
-continue;
-}
-suffixMin[n-1]=prefix[n-1];
-for(int i=n-2;i>=0;i--)
-suffixMin[i]=min(prefix[i],suffixMin[i+1]);
-bool possible=false;
-for(int i=0; i<=firstBad;i++){
-    if(suffixMin[i]-a[i]>=0){
-        possible = true;
-        break;
-    }
-}
-cout<<(possible ?"YES\n":"NO\n");
+    cout << (possible ? "YES\n" : "NO\n");
 }
 return 0;
 }
