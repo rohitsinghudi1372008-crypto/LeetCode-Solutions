@@ -44,9 +44,9 @@ Explanation: In round one, first Alice removes 2 and then Bob removes 5. Then in
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 31.14%)  
-**Memory:** 28.1 MB (beats 93.49%)  
-**Submitted:** 2026-09-14T13:55:47.140Z  
+**Runtime:** 2 ms (beats 26.28%)  
+**Memory:** 28.3 MB (beats 29.91%)  
+**Submitted:** 2026-09-23T18:13:37.250Z  
 
 ```cpp
 class Solution {
