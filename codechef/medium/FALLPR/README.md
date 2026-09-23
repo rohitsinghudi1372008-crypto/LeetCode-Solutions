@@ -77,14 +77,30 @@ Thus, it's impossible to make the array  *good*  after a single deletion.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:03:09.692Z  
+**Submitted:** 2026-09-23T15:31:09.375Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+	int t;
+	cin>>t;
+	while(t--){
+	    int n;
+	    cin>>n;
+	    vector<long long>a(n),prefix(n),suffixMin(n);
+	    for(int i=0; i<n; i++)
+	    cin>>a(i);
+	    prefix[0]=a[0];
+	    for(int i=1; i<n; i++)
+	    prefix[i]=prefix[i-1]+a[i];
+	    bool good=true;
+	    int firstBad=-1;
+	    for(int i=0; i<n; i++)
+	    
+	    
+	}
 
 }
 
