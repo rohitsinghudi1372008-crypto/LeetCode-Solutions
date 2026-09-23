@@ -77,7 +77,7 @@ Thus, it's impossible to make the array  *good*  after a single deletion.
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-23T15:47:17.463Z  
+**Submitted:** 2026-09-23T15:45:29.216Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -98,7 +98,7 @@ int main() {
             prefix[i] = prefix[i - 1] + a[i];
         bool good = true;
         int firstBad = -1;
-        for (int i = 0; i < n; i++){
+        for (int i = 0; i < n; i++)
             if (prefix[i] < 0) {
                 good = false;
                 firstBad = i;
