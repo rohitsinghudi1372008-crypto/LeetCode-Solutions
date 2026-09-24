@@ -61,7 +61,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-24T13:28:08.598Z  
+**Submitted:** 2026-09-24T13:27:20.367Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -77,7 +77,7 @@ int main() {
         if (n == x) {
             cout << n - x << endl;
         } else {
-            cout << min(x,n-x) << endl;
+            cout << min(n, x) << endl;
         }
     }
     return 0;
