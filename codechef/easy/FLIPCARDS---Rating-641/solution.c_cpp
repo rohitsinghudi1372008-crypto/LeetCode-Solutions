@@ -11,7 +11,7 @@ int main() {
         if (n == x) {
             cout << n - x << endl;
         } else {
-            cout << min(n, x) << endl;
+            cout << min(x,n-x) << endl;
         }
     }
     return 0;
