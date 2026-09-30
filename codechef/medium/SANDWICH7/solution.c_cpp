@@ -1,10 +1,11 @@
 #include <bits/stdc++.h>
+
 using namespace std;
 
 int main() {
-	int b,h,c;
-	cin>>b>>h>>c;
-	cout<<min(b/2,h+c);
-	return 0;
+    int b, h, c;
+    cin >> b >> h >> c;
+    cout << min(b / 2, h + c);
+    return 0;
 
 }
