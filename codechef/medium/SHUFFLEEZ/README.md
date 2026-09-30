@@ -60,20 +60,13 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T16:07:14.412Z  
+**Submitted:** 2026-09-30T16:03:44.392Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 
 using namespace std;
-const long long MOD=998244353;
-long long power(long long a,long long b){
-    long long ans=1;
-    while(b>0){
-        if(b%2==1)
-        ans=ans*a%MOD
-    }
-}
+
 int main() {
     int t;
     cin >> t;
@@ -83,16 +76,17 @@ int main() {
         for (int i = 0; i < n; i++) {
             int x;
             cin >> x;
+            long lon fact = 1;
+            for (int i = 1; i <= k; i++) {
+                fact = fact * i % MOD;
+            }
+            long long ans = fact * power(k, n - k) % MOD;
+            cout << ans << endl;
         }
-        long lon fact = 1;
-        for (int i = 1; i <= k; i++) {
-            fact = fact * i % MOD;
-        }
-        long long ans = fact * power(k, n - k) % MOD;
-        cout << ans << endl;
+        return 0;
     }
-    return 0;
-}
+
+
 ```
 
 ---
