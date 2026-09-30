@@ -60,7 +60,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T15:59:38.406Z  
+**Submitted:** 2026-09-30T16:03:39.067Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,7 +72,17 @@ cin>>t;
 while(t--){
     int n,k;
     cin>>n>>k;
-    
+    for(int i=0; i<n; i++){
+        int x;
+        cin>>x;
+        long lon fact =1;
+        for(int i=1; i<=k; i++){
+            fact=fact*i%MOD;
+        }
+        long long ans =fact*power(k,n-k)%MOD;
+        cout<<ans<<endl;
+    }
+    return 0;
 }
 
 }
