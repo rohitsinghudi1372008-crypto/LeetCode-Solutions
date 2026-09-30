@@ -56,7 +56,7 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T14:51:52.400Z  
+**Submitted:** 2026-09-30T14:56:14.146Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -66,8 +66,25 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--){
-	    
+	   int n,m,k;
+	   cin>>n>>m>>k;
+	   vector<bool>occupid(n+1,false);
+	   for(int i=0;i<m; i++){
+	       int x;
+	       cin>>x;
+	       occupied[x]=true;
+	   }for(int i=0; i<k; i++){
+	       for(int seat=1; seat<=n; seat++){
+	           if(!occupied[seat]){
+	               cout<<seat<<" ";
+	               occupied[seat]=true;
+	               break;
+	           }
+	       }
+	   }
+	   cout<<endl;
 	}
+	return 0;
 
 }
 
