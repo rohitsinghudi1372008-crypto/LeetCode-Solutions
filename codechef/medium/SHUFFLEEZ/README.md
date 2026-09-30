@@ -60,22 +60,19 @@ Output
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-09-30T16:07:56.134Z  
+**Submitted:** 2026-09-30T16:07:14.412Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 
 using namespace std;
-const long long MOD = 998244353;
-long long power(long long a, long long b) {
-    long long ans = 1;
-    while (b > 0) {
-        if (b % 2 == 1)
-            ans = ans * a % MOD;
-            a=a*a%MOD;
-            b/=2;
+const long long MOD=998244353;
+long long power(long long a,long long b){
+    long long ans=1;
+    while(b>0){
+        if(b%2==1)
+        ans=ans*a%MOD
     }
-    return ans;
 }
 int main() {
     int t;
