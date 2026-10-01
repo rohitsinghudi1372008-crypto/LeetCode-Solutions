@@ -5,7 +5,7 @@ public:
         vector<int>ans(n,0);
         stack<int>st;
         for(int i=n-1;i>=0;i--){
-            if(!st.empty() && temperatures[i]>=temperatures[st.top()]){
+            while(!st.empty() && temperatures[i]>=temperatures[st.top()]){
                 st.pop();
             }
             if(!st.empty()){
