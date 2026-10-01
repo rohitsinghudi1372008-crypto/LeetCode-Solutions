@@ -44,7 +44,7 @@ Output: [1,1,0]
 **Language:** C++  
 **Runtime:** 0 ms  
 **Memory:** 8.3 MB  
-**Submitted:** 2026-10-01T08:35:29.443Z  
+**Submitted:** 2026-10-01T08:37:45.545Z  
 
 ```cpp
 class Solution {
