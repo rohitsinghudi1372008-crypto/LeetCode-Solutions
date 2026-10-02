@@ -42,9 +42,9 @@ Output: 1
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 20.51%)  
-**Memory:** 62.9 MB (beats 48.39%)  
-**Submitted:** 2026-10-02T06:32:40.079Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 62.8 MB (beats 78.78%)  
+**Submitted:** 2026-10-02T06:34:48.291Z  
 
 ```cpp
 class Solution {
@@ -52,17 +52,17 @@ public:
     int maxArea(vector<int>& height) {
         int left=0;
         int right=height.size()-1;
-        int ans=0;
+        int max_area=0;
         while(left<right){
             int h=min(height[left],height[right]);
             int width=right-left;
-            ans=max(ans,h*width);
+            max_area=max(max_area,h*width);
             if (height[left] < height[right])
                 left++;
             else
                 right--;
         }
-        return ans;
+        return max_area;
     }
 };
 ```
