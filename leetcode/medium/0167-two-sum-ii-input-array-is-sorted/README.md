@@ -56,28 +56,27 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 ## Solution
 
 **Language:** C++  
-**Runtime:** 7 ms (beats 2.05%)  
-**Memory:** 25.7 MB (beats 12.05%)  
-**Submitted:** 2026-10-02T06:03:01.730Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 25.5 MB (beats 29.50%)  
+**Submitted:** 2026-10-02T06:10:52.304Z  
 
 ```cpp
 class Solution {
 public:
     vector<int> twoSum(vector<int>& numbers, int target) {
-      int left=0;
-      int right=numbers.size()-1;
-     
-      while(left<right) {
-         int sum=numbers[left]+numbers[right];
-         if(sum==target){
-            return {left+1,right+1};
-         }else if(sum>target){
-            right--;
-         }else{
-            left++;
-         }
-      } 
-      return {};
+        int left=0;
+        int right=numbers.size()-1;
+        while(left<right){
+            int sum=numbers[left]+numbers[right];
+            if(sum==target){
+                return {left+1,right+1};
+            }else if(sum<target){
+                left++;
+            }else{
+                right--;
+            }
+        }
+        return {};
     }
 };
 ```
