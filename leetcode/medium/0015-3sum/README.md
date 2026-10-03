@@ -52,38 +52,45 @@ Explanation: The only possible triplet sums up to 0.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 53 ms (beats 30.42%)  
-**Memory:** 29 MB (beats 72.75%)  
-**Submitted:** 2026-09-29T16:21:26.010Z  
+**Runtime:** 51 ms (beats 40.70%)  
+**Memory:** 29.1 MB (beats 45.23%)  
+**Submitted:** 2026-10-03T04:32:34.917Z  
 
 ```cpp
 class Solution {
 public:
     vector<vector<int>> threeSum(vector<int>& nums) {
-          vector<vector<int>> ans;
+        vector<vector<int>> ans;
+
         sort(nums.begin(), nums.end());
 
         for (int i = 0; i < nums.size() - 2; i++) {
-            if (i > 0 && nums[i] == nums[i - 1]) continue;
+            if (i > 0 && nums[i] == nums[i - 1])
+                continue;
 
-            int l = i + 1, r = nums.size() - 1;
+            int left = i + 1;
+            int right = nums.size() - 1;
 
-            while (l < r) {
-                long long sum = 1LL * nums[i] + nums[l] + nums[r];
+            while (left < right) {
+                int sum = nums[i] + nums[left] + nums[right];
 
                 if (sum == 0) {
-                    ans.push_back({nums[i], nums[l], nums[r]});
+                    ans.push_back({nums[i], nums[left], nums[right]});
 
-                    int left = nums[l], right = nums[r];
+                    while (left < right && nums[left] == nums[left + 1])
+                        left++;
 
-                    while (l < r && nums[l] == left) l++;
-                    while (l < r && nums[r] == right) r--;
+                    while (left < right && nums[right] == nums[right - 1])
+                        right--;
+
+                    left++;
+                    right--;
                 }
                 else if (sum < 0) {
-                    l++;
+                    left++;
                 }
                 else {
-                    r--;
+                    right--;
                 }
             }
         }
