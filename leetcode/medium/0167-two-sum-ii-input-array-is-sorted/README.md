@@ -57,8 +57,8 @@ Explanation: The sum of -1 and 0 is -1. Therefore index1 = 1, index2 = 2. We ret
 
 **Language:** C++  
 **Runtime:** 0 ms (beats 100.00%)  
-**Memory:** 25.5 MB (beats 29.50%)  
-**Submitted:** 2026-10-02T06:10:52.304Z  
+**Memory:** 25.6 MB (beats 25.37%)  
+**Submitted:** 2026-10-05T12:02:53.186Z  
 
 ```cpp
 class Solution {
