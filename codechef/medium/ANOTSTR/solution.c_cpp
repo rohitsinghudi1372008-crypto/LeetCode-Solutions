@@ -15,7 +15,7 @@ int main() {
         if (onesA % 2 == onesB % 2)
             cout << "yes" << endl;
         else
-            cout << "NO" << endl;
+            cout << "NO" << end;
 
     }
     return 0;
