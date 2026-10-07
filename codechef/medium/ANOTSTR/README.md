@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:02:18.793Z  
+**Submitted:** 2026-10-07T15:01:48.569Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -92,7 +92,7 @@ int main() {
         if (onesA % 2 == onesB % 2)
             cout << "yes" << endl;
         else
-            cout << "NO" << endl;
+            cout << "NO" << end;
 
     }
     return 0;
