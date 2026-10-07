@@ -62,7 +62,7 @@ abcdefghijklmnopqrstuvwxyz
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:49:33.871Z  
+**Submitted:** 2026-10-07T14:55:51.491Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -72,9 +72,25 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--){
-	    
+	   int n,m;
+	   cin>>n>>m;
+	   string s,l;
+	   cin>>s>>l;
+	   set<char>left(l.begin(),l.end());
+	   int current=0; int ans=0;
+	   char prev='#';
+	   for(char c:s){
+	       char hand=left.count(c)?'l':'r';
+	       if(hand==prev)
+	       current++;
+	       else{
+	           current=1;
+	           prev=hand;
+	       }
+	       ans=max(ans,current);
 	}
-
+	cout<<ans<<endl;
+}
 }
 
 ```
