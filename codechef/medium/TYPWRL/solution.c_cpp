@@ -5,7 +5,23 @@ int main() {
 	int t;
 	cin>>t;
 	while(t--){
-	    
+	   int n,m;
+	   cin>>n>>m;
+	   string s,l;
+	   cin>>s>>l;
+	   set<char>left(l.begin(),l.end());
+	   int current=0; int ans=0;
+	   char prev='#';
+	   for(char c:s){
+	       char hand=left.count(c)?'l':'r';
+	       if(hand==prev)
+	       current++;
+	       else{
+	           current=1;
+	           prev=hand;
+	       }
+	       ans=max(ans,current);
 	}
-
+	cout<<ans<<endl;
+}
 }
