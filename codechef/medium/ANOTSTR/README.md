@@ -72,14 +72,23 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T14:56:42.851Z  
+**Submitted:** 2026-10-07T15:00:36.843Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
 using namespace std;
 
 int main() {
-	// your code goes here
+	int n;
+	cin>>n;
+	string a,b;
+	cin>>a>>b;
+	int onesA=count(a.begin(),a.end(),'1');
+	int onesB=count(b.begin(),b.end(),'1');
+	if(onesA%2==onesB%2)
+	cout<<"yes"<<endl;
+	else
+	cout<<"NO"<<end;
 
 }
 
