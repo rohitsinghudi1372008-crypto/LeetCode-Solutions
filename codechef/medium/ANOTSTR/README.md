@@ -72,7 +72,7 @@ NO
 **Language:** c_cpp  
 **Runtime:** N/A  
 **Memory:** N/A  
-**Submitted:** 2026-10-07T15:01:37.561Z  
+**Submitted:** 2026-10-07T15:02:18.793Z  
 
 ```c_cpp
 #include <bits/stdc++.h>
@@ -81,21 +81,21 @@ using namespace std;
 
 int main() {
     int t;
-    cin>>t;
-    while(t--){
-    int n;
-    cin >> n;
-    string a, b;
-    cin >> a >> b;
-    int onesA = count(a.begin(), a.end(), '1');
-    int onesB = count(b.begin(), b.end(), '1');
-    if (onesA % 2 == onesB % 2)
-        cout << "yes" << endl;
-    else
-        cout << "NO" << end;
+    cin >> t;
+    while (t--) {
+        int n;
+        cin >> n;
+        string a, b;
+        cin >> a >> b;
+        int onesA = count(a.begin(), a.end(), '1');
+        int onesB = count(b.begin(), b.end(), '1');
+        if (onesA % 2 == onesB % 2)
+            cout << "yes" << endl;
+        else
+            cout << "NO" << endl;
 
-}
-return 0;
+    }
+    return 0;
 }
 ```
 
