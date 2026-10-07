@@ -2,6 +2,15 @@
 using namespace std;
 
 int main() {
-	// your code goes here
+	int n;
+	cin>>n;
+	string a,b;
+	cin>>a>>b;
+	int onesA=count(a.begin(),a.end(),'1');
+	int onesB=count(b.begin(),b.end(),'1');
+	if(onesA%2==onesB%2)
+	cout<<"yes"<<endl;
+	else
+	cout<<"NO"<<end;
 
 }
