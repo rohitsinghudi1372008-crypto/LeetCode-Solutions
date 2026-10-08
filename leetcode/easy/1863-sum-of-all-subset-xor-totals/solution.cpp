@@ -1,12 +1,17 @@
 class Solution {
 public:
-    int subsetXORSum(vector<int>& nums) {
-        int ans = 0;
-
-        for (int x : nums) {
-            ans |= x;
+    int helper(vector<int>& nums, int index, int currentXOR) {
+        if (index == nums.size()) {
+            return currentXOR;
         }
 
-        return ans * (1 << (nums.size() - 1));
+        int notPick = helper(nums, index + 1, currentXOR);
+        int pick = helper(nums, index + 1, currentXOR ^ nums[index]);
+
+        return pick + notPick;
+    }
+
+    int subsetXORSum(vector<int>& nums) {
+        return helper(nums, 0, 0);
     }
 };
