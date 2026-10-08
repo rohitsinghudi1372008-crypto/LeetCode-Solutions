@@ -67,9 +67,9 @@ Explanation: The sum of all XOR totals for every subset is 480.
 ## Solution
 
 **Language:** C++  
-**Runtime:** 1 ms (beats 39.69%)  
-**Memory:** 9.1 MB (beats 65.99%)  
-**Submitted:** 2026-10-08T14:37:18.116Z  
+**Runtime:** 0 ms (beats 100.00%)  
+**Memory:** 9.2 MB (beats 33.48%)  
+**Submitted:** 2026-10-08T14:42:37.472Z  
 
 ```cpp
 class Solution {
@@ -78,13 +78,11 @@ public:
         if (index == nums.size()) {
             return currentXOR;
         }
-
         int notPick = helper(nums, index + 1, currentXOR);
         int pick = helper(nums, index + 1, currentXOR ^ nums[index]);
 
         return pick + notPick;
     }
-
     int subsetXORSum(vector<int>& nums) {
         return helper(nums, 0, 0);
     }
