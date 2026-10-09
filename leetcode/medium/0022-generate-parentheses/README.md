@@ -33,9 +33,9 @@ Output: ["()"]
 ## Solution
 
 **Language:** C++  
-**Runtime:** 4 ms (beats 30.22%)  
+**Runtime:** 0 ms (beats 100.00%)  
 **Memory:** 15.8 MB (beats 33.80%)  
-**Submitted:** 2026-10-09T08:10:48.397Z  
+**Submitted:** 2026-10-09T08:10:57.166Z  
 
 ```cpp
 class Solution {
